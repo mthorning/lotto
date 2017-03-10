@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lotto Experiment</title>
+        <meta charset="utf-8">
+        <style>
+            #settings {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: space-around;
+                margin: auto;
+            }
+
+            #settings > * {
+                margin: 5px;
+            }
+
+            #settings input[type="number"] {
+                width: 50px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div id="settings">
+            <select name="whichLottery">
+                <option value="lotto">Lotto</option>
+                <option value="euromillions">Euromillions</option>
+            </select>
+            <select name="haveTicket">
+                <option value="false">Consecutive Test</option>
+                <option value="true">Ticket Test</option>
+            </select>
+            <br>
+            <div><label for="number">number of tests to run: </label><input type="number" min="1" value="1" name="number"></div>
+            <br>
+            <button id="runTests">Run Tests</button>
+        </div>
+
+        <ul id="output" style="list-style-type: none"></ul>
+
+    </body>
+
+        <script src="app.js"></script>
+    </body>
+</html>
